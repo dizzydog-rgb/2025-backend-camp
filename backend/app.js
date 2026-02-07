@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/healthcheck", (req, res) => {
   res.status(200).json({
     status: "success",
-    message: "OKKK",
+    message: "OK",
   });
 });
 app.use("/api/credit-package", creditPackageRouter);
